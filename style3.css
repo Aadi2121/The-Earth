@@ -1,0 +1,79 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+background-color: #001220;
+}
+h1{
+    margin-top: 40px;
+    color: white;
+    border-bottom: 1px solid gray;
+}
+.main{
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    margin-top: 30px;
+    border-bottom: 1px solid gray;
+}
+#beert{
+    width: 200px;
+    height: 22vh;
+}
+#cont1{
+    width: 40%;
+    height:22vh ;
+    overflow: hidden;
+    color: white;
+    margin-left: 10px;
+    background-color: rgba(0, 0, 0, 0.304);
+}
+.main1{
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    margin-top: 30px;
+    border-bottom: 1px solid gray;
+}
+.sum12{
+     justify-content: end;
+    text-align: end;
+    align-items: end;
+}
+#beert1{
+    width: 200px;
+    height: 22vh;
+float: right;
+}
+#cont2{
+    width: 40%;
+    height:22vh ;
+    overflow: hidden;
+    color: white;
+   float: right;
+    margin-right: 10px;
+    background-color: rgba(0, 0, 0, 0.304);
+}
+.main3{
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    margin-top: 30px;
+    border-bottom: 1px solid gray;
+}
+#beert12{
+    width: 200px;
+    height: 22vh;
+}
+#cont3{
+    width: 40%;
+    height:22vh ;
+    overflow: hidden;
+    color: white;
+    margin-right: 10px;
+    background-color: rgba(0, 0, 0, 0.304);
+}

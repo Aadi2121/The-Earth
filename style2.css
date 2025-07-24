@@ -1,0 +1,72 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color:  #001220;
+
+}
+.main-cont{
+    height: 250px;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 30%;
+}
+.space{
+    height: 80%;
+    width: 80%;
+    margin-top: 20px;
+    border-radius: 50%;
+    background-image: url('evr.png');
+    background-position: left;
+    background-size: cover;
+    justify-content: center;
+    overflow: hidden;
+    animation: rotateSpace 36s linear infinite;
+}
+.space ::before{
+    content: '';
+position: absolute;
+width: 100%;
+height: 100%;
+border-radius: 50%;
+box-shadow: inset -20px -20px 50px #000,
+inset 0 0 20px rgba(255, 255, 255, 0.5);
+z-index: 1;
+}
+.space::after{
+    content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+border-radius: 50%;
+box-shadow: inset -20px -20px 50px #000,
+inset 0 0 20px rgba(255, 255, 255, 0.5);
+z-index: 1;
+}
+@keyframes rotateSpace{
+    form {
+        transform: rotate(0deg);
+    }
+     to {
+        transform: rotate(360deg);
+    }
+}
+h1{
+    margin-top: 20px;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+p{
+    color: white;
+    overflow: hidden;
+    width: 90%;
+    border: 2px solid white;
+    background-color: #00000035;
+}
+

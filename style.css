@@ -1,0 +1,104 @@
+  body {
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background-color: #001220;
+color: white;
+}
+
+.earth-container {
+position: relative;
+width: 400px;
+height: 400px;
+margin: 30px;
+text-align: center;
+}
+
+.earth {
+ width: 100%;
+height: 100%;
+border-radius: 50%;
+background: url('re1.png');
+background-position: center;
+background-size: cover;
+box-shadow: 0 0 60px rgba(0, 100, 255, 0.3),
+background-position: relative;
+overflow: hidden;
+animation: rotateEarth 36s linear infinite;
+}
+.earth::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+border-radius: 50%;
+box-shadow: inset -20px -20px 50px #000,
+inset 0 0 20px rgba(255, 255, 255, 0.5);
+z-index: 1;
+}
+.earth::after {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+border-radius: 50%;
+background: radial-gradient(circle at 30% 50%,transparent 70%, rgba(0, 0, 0, 0.3) 100%); 
+z-index: 1;
+}
+ @keyframes rotateEarth {
+from {
+transform: rotate(0deg);
+}
+to {
+transform: rotate(360deg);
+}
+}
+.title {
+margin-top: 20px;
+font-size: 1.5rem;
+color: #4fa3ff;
+text-shadow: 0 0 10px rgba(79, 163, 255, 0.5);
+}
+.controls {
+ margin-top: 30px;
+ }
+button {
+padding: 10px 20px;
+margin: 0 10px;
+background: rgba(0, 120, 255, 0.2);
+color: white;
+border: 1px solid rgba(0, 120, 255, 0.5);
+border-radius: 5px;
+cursor: pointer;
+transition: all 0.3s;
+}
+ button:hover {
+background: rgba(0, 120, 255, 0.4);
+}
+.r1 {
+position: absolute;
+ width: 4px;
+ height: 150%;
+ background: linear-gradient(to bottom,transparent,rgba(255, 255, 255, 0.3), transparent);  
+top: -25%;
+left: 50%;
+transform: translateX(-50%);
+z-index: 0;
+}
+@media (max-width: 600px) {
+.earth-container {
+width: 300px;
+height: 300px;
+}
+}
+.xya title{
+  /* display: flex;
+  flex-direction: row; */
+}

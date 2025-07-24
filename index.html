@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" class="css">
+    <title>The Earth</title>
+</head>
+<body>
+    <div class="earth-container">
+         <div class="r1"></div> </a>
+         <div class="earth" id="earth"><img src="re1.png"></div>
+         <div class="xyz">
+         <a href="evolution.HTML"> <h1 class="title"> Eveluation of Earth</h1> </a>
+         <a href="index4.html"> <h1 class="title"> Planets</h1> </a>
+         <a href="solar-html.html"> <h1 class="title"> Solar System</h1> </a>
+         <a href="index5.html"> <h1 class="title"> Moon</h1> </a>
+         <a href="index3.html"> <h1 class="title"> Beuaty of Earth</h1> </a>
+         </div>
+         <div class="controls">
+            <button id="pauseBtn">Pause</button>
+            <button id="resumeBtn">Resume</button>
+         </div>
+    </div>
+
+    <script>
+        const earth = document.getElementById('earth');
+        const pauseBtn = document.getElementById('pauseBtn');
+        const resumeBtn = document.getElementById('resumeBtn');
+
+        pauseBtn.addEventListener('click', () => 
+        {
+            earth.style.animationPlayState = 'paused';
+        });
+
+        resumeBtn.addEventListener('click', () => {
+            earth.style.animationPlayState = 'running';
+        });
+        earth.addEventListener('mouseenter', () => {
+            earth.style.boxShadow = '0 0 80px rgba(0, 100, 255, 0.5), inset 0 0 120px rgba(0, 100, 255, 0.5)';
+        });
+
+        earth.addEventListener('mouseleave', () => {
+            earth.style.boxShadow = '0 0 60px rgba(0, 100, 255, 0.3), inset 0 0 100px rgba(0, 100, 255, 0.3)';
+        });
+    </script>
+</body>
+</html>
